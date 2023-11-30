@@ -1,0 +1,13 @@
+RewriteEngine On
+
+# Set header Allow for allowed methods
+Header always set Allow "GET, POST, PUT, OPTIONS"
+
+# Block other methods with a 405 response
+RewriteCond %{REQUEST_METHOD} !^(GET|POST|HEAD|OPTIONS|PUT)$
+RewriteRule ^ - [R=405,L]
+
+# Rewrite to index.php if the file or directory does not exist
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php/$1 [L]

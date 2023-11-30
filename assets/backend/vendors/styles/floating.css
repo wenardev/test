@@ -1,0 +1,25 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body{
+  width: 100%;
+  height: 100%;
+}
+
+.image{
+  width: 100%;
+  max-width: 300px;
+  animation: up-down 1.4s infinite ease-in-out alternate;
+}
+
+@keyframes up-down{
+  from{
+    transform: translatey(0px);
+  }
+  to{
+    transform: translatey(-20px);
+  }
+}
