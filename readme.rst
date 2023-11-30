@@ -3,7 +3,7 @@ Tes Junior Programmer
 wendi Abdul Rohim
 =======================
 
-Deskripsi singkat proyek Anda di sini.
+Tes Junior Programmer proyek Wendi Abdul Rohim 
 
 Instalasi
 --------------
